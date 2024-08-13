@@ -21,7 +21,7 @@ func NewHandler(q *pgstore.Queries) http.Handler {
 	a := apiHandler{
 		q: q,
 	}
-	
+
 	r := chi.NewRouter()
 
 	a.r = r
